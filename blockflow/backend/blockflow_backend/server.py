@@ -1,7 +1,7 @@
 from gunicorn.app.base import BaseApplication  # type: ignore
 
 
-class LangflowApplication(BaseApplication):
+class blockflowApplication(BaseApplication):
     def __init__(self, app, options=None):
         self.options = options or {}
         self.application = app

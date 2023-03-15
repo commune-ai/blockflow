@@ -2,7 +2,7 @@
 FROM logspace/frontend_build as frontend_build
 
 # `python-base` sets up all our shared environment variables
-FROM python:3.10-slim as langflow_build
+FROM python:3.10-slim as blockflow_build
 
 # python
 ENV PYTHONUNBUFFERED=1 \
@@ -46,14 +46,14 @@ RUN apt-get update \
 # copy project requirement files here to ensure they will be cached.
 WORKDIR /app
 COPY pyproject.toml ./
-# copy langflow
-COPY ./langflow ./langflow
+# copy blockflow
+COPY ./blockflow ./blockflow
 
 # Copy files from frontend
-COPY --from=frontend_build /app/build /app/langflow/frontend/build/
+COPY --from=frontend_build /app/build /app/blockflow/frontend/build/
 
 RUN pip install .
 
 EXPOSE 5003
 
-CMD [ "langflow" ]
+CMD [ "blockflow" ]

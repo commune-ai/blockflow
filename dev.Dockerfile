@@ -17,4 +17,4 @@ COPY ./ ./
 RUN poetry config virtualenvs.create false && poetry install --no-interaction --no-ansi
 
 
-CMD ["uvicorn", "langflow.cli:app", "--host", "0.0.0.0", "--port", "5003"]
+CMD ["uvicorn", "blockflow.cli:app", "--host", "0.0.0.0", "--port", "5003"]

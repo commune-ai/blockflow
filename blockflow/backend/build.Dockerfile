@@ -43,7 +43,7 @@ RUN curl -sSL https://install.python-poetry.org | python3 -
 # copy project requirement files here to ensure they will be cached.
 WORKDIR /app
 COPY poetry.lock pyproject.toml ./
-COPY langflow_backend/ ./langflow_backend
+COPY blockflow_backend/ ./blockflow_backend
 
 # poetry install
 RUN poetry install --without dev

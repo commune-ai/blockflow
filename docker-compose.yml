@@ -10,11 +10,11 @@ services:
     volumes:
       - ./:/app
     environment:
-      - PYTHONPATH=/langflow  # add this line to set PYTHONPATH
+      - PYTHONPATH=/blockflow  # add this line to set PYTHONPATH
 
   frontend:
-    build: ./langflow/frontend
+    build: ./blockflow/frontend
     ports:
       - "3000:3000"
     volumes:
-      - ./langflow/frontend:/app
+      - ./blockflow/frontend:/app

@@ -1,17 +1,17 @@
 [tool.poetry]
-name = "langflow"
+name = "blockflow"
 version = "0.0.32"
 description = "A Python package with a built-in web application"
 authors = ["Logspace <contact@logspace.ai>"]
 packages = [
-    { include = "langflow_backend", from = "langflow/backend" },
+    { include = "blockflow_backend", from = "blockflow/backend" },
 ]
-include = ["langflow/backend/langflow_backend/*", "langflow/backend/langflow_backend/**/*"]
+include = ["blockflow/backend/blockflow_backend/*", "blockflow/backend/blockflow_backend/**/*"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.scripts]
-langflow = "langflow_backend.__main__:main"
+blockflow = "blockflow_backend.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.9"

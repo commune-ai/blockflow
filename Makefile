@@ -21,17 +21,17 @@ lint:
 	poetry run ruff . --fix
 
 install_frontend:
-	cd langflow/frontend && npm install
+	cd blockflow/frontend && npm install
 
 build_frontend:
-	cd langflow/frontend && CI='' npm run build
+	cd blockflow/frontend && CI='' npm run build
 
 build:
 	make install_frontend
 	make build_frontend
-	cp -r langflow/frontend/build langflow/backend/langflow_backend/frontend
+	cp -r blockflow/frontend/build blockflow/backend/blockflow_backend/frontend
 	poetry build --format sdist
-	rm -rf langflow/backend/langflow_backend/frontend
+	rm -rf blockflow/backend/blockflow_backend/frontend
 
 publish:
 	make build

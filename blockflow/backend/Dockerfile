@@ -6,9 +6,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install git -y
 
 COPY --from=backend_build /app/dist/*.whl /app/
-RUN pip install langflow_backend-*.whl
+RUN pip install blockflow_backend-*.whl
 RUN rm *.whl
 
 EXPOSE 80
 
-CMD [ "uvicorn", "--host", "0.0.0.0", "--port", "80", "langflow.backend.app:app" ]
+CMD [ "uvicorn", "--host", "0.0.0.0", "--port", "80", "blockflow.backend.app:app" ]
