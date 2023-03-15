@@ -2,7 +2,7 @@
 
 # ⛓️ blockflow
 
-~ A User Interface For [LangChain](https://github.com/hwchase17/langchain) ~
+~ A User Interface For Anything Python ~
 
 <p>
 <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/logspace-ai/blockflow" />
