@@ -5,16 +5,16 @@
 ~ A User Interface For Anything Python ~
 
 <p>
-<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/logspace-ai/blockflow" />
-<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/logspace-ai/blockflow" />
-<img alt="" src="https://img.shields.io/github/repo-size/logspace-ai/blockflow" />
-<img alt="GitHub Issues" src="https://img.shields.io/github/issues/logspace-ai/blockflow" />
-<img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/logspace-ai/blockflow" />
-<img alt="Github License" src="https://img.shields.io/github/license/logspace-ai/blockflow" />  
+<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/commune-ai/blockflow" />
+<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/commune-ai/blockflow" />
+<img alt="" src="https://img.shields.io/github/repo-size/commune-ai/blockflow" />
+<img alt="GitHub Issues" src="https://img.shields.io/github/issues/commune-ai/blockflow" />
+<img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/commune-ai/blockflow" />
+<img alt="Github License" src="https://img.shields.io/github/license/commune-ai/blockflow" />  
 </p>
 
-<a href="https://github.com/logspace-ai/blockflow">
-    <img width="100%" src="https://github.com/logspace-ai/blockflow/blob/main/img/blockflow-demo.gif?raw=true"></a>
+<a href="https://github.com/commune-ai/blockflow">
+    <img width="100%" src="https://github.com/commune-ai/blockflow/blob/main/img/blockflow-demo.gif?raw=true"></a>
 
 blockflow is a GUI for [LangChain](https://github.com/hwchase17/langchain), designed with [react-flow](https://github.com/wbkd/react-flow) to provide an effortless way to experiment and prototype flows with drag-and-drop components and a chat box.
 

@@ -2,7 +2,7 @@
 name = "blockflow"
 version = "0.0.32"
 description = "A Python package with a built-in web application"
-authors = ["Logspace <contact@logspace.ai>"]
+authors = ["commune <contact@commune.ai>"]
 packages = [
     { include = "blockflow_backend", from = "blockflow/backend" },
 ]

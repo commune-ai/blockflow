@@ -2,6 +2,9 @@
 
 all: help
 
+api:
+	uvicorn --host 0.0.0.0 --port 5003 blockflow.backend.app:app
+
 coverage:
 	poetry run pytest --cov \
 		--cov-config=.coveragerc \

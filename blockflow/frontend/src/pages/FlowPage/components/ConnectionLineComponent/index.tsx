@@ -14,7 +14,7 @@ const ConnectionLineComponent = ({
 			<path
 				fill="none"
 				stroke="#222"
-				strokeWidth={1.5}
+				strokeWidth={5}
 				className="animated dark:stroke-gray-400"
 				d={`M${fromX},${fromY} C ${fromX} ${toY} ${fromX} ${toY} ${toX},${toY}`}
 				style={connectionLineStyle}

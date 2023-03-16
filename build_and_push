@@ -1,9 +1,9 @@
 #! /bin/bash
 
 cd blockflow/frontend
-docker build -t logspace/frontend_build -f build.Dockerfile .
+docker build -t commune/frontend_build -f build.Dockerfile .
 cd ../backend
-docker build -t logspace/backend_build -f build.Dockerfile .
+docker build -t commune/backend_build -f build.Dockerfile .
 
 cd ../../
 VERSION=$(toml get --toml-path pyproject.toml tool.poetry.version)

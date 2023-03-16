@@ -6,6 +6,6 @@ json=$(cat package.json)
 # Extract the value of the "version" field using jq
 VERSION=$(echo "$json" | jq -r '.version')
 
-docker build -t logspace/frontend_build -f build.Dockerfile .
+docker build -t commune/frontend_build -f build.Dockerfile .
 docker build --build-arg VERSION=$VERSION -t ibiscp/blockflow_frontend:$VERSION .
 docker push ibiscp/blockflow_frontend:$VERSION

@@ -180,6 +180,7 @@ export default function FlowPage({ flow }:{flow:FlowType}) {
 						onDrop={onDrop}
 						onNodesDelete={onDelete}
 					>
+						// how is this code? Answer: it's good because it's mine 
 						<Background className="dark:bg-gray-900"/>
 						<Controls className="[&>button]:text-black  [&>button]:dark:bg-gray-800 hover:[&>button]:dark:bg-gray-700 [&>button]:dark:text-gray-400 [&>button]:dark:fill-gray-400 [&>button]:dark:border-gray-600">
 							<ControlButton

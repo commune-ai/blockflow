@@ -1,5 +1,5 @@
-# FROM logspace/backend_build as backend_build
-FROM logspace/frontend_build as frontend_build
+# FROM commune/backend_build as backend_build
+FROM commune/frontend_build as frontend_build
 
 # `python-base` sets up all our shared environment variables
 FROM python:3.10-slim as blockflow_build

@@ -41,7 +41,7 @@ def serve(
         # Run using uvicorn on MacOS
         import uvicorn
 
-        uvicorn.run(app, host=host, port=port, log_level="info")
+        uvicorn.run("main:app", host=host, port=port, log_level="info", reload=True, workers=2)
     else:
         from blockflow_backend.server import blockflowApplication
 

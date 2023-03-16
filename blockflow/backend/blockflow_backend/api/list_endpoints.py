@@ -18,8 +18,8 @@ def read_items():
         "prompts",
         "llms",
         "tools",
+        "fam"
     ]
-
 
 @router.get("/chains")
 def list_chains():
